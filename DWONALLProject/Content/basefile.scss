@@ -1,1 +1,6 @@
-﻿
+﻿html{
+    font-size: 62.5%;
+}
+@mixin bg_main_color {
+  background-color : #0e6b99;
+}

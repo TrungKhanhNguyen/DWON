@@ -1,8 +1,14 @@
-﻿.text-white {
+﻿html {
+  font-size: 62.5%; }
+
+.text-white {
   color: #fff; }
 
+a {
+  color: #555; }
+
 body {
-  line-height: 25px;
+  line-height: 30px;
   color: #555; }
 
 main {
@@ -107,68 +113,71 @@ main {
     padding-right: 3px;
     padding-left: 3px;
     font-size: 13px;
-    background-color: #0e6b99 !important; }
+    background-color: #0e6b99; }
 
 .cat-item1 .content h6, .cat-item2 .content h6 {
-  font-size: 12px; }
+  font-size: 1.2rem; }
 
 .btn-viewall {
   color: #fff;
   background-color: #0e9be3 !important;
-  border-color: #0e9be3; }
+  border-color: #0e9be3;
+  font-size: 1.5rem;
+  margin-top: 1rem; }
 
-.software-item .image {
-  float: left;
-  margin-right: 20px;
-  min-height: 100px; }
-  .software-item .image img {
-    max-width: 80px;
-    max-height: 100px; }
-
-.software-item .content {
-  display: block;
-  margin-left: 100px; }
-  .software-item .content a {
-    color: #555; }
-  .software-item .content .wlt_shortcode_excerpt {
-    font-size: 14px;
-    line-height: 20px;
-    color: #666666; }
-
-.software-item .bg-secondary {
-  background: #0e9be3 !important;
-  border-color: #2e4354; }
-
-.software-item .event-month {
-  font-size: 13px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 5px 0; }
-
-.software-item .event-day {
-  color: #000000;
-  background: #fff;
-  border-left: #e8e8e8 1px solid;
-  border-right: #e8e8e8 1px solid;
-  border-bottom: #e8e8e8 1px solid;
-  font-size: 24px;
-  text-align: center;
-  padding: 5px 0; }
-
-.software-item .flex-list {
-  position: relative;
-  margin: 1em;
-  overflow: hidden; }
-  .software-item .flex-list .list-inline-item {
+.software-item {
+  font-size: 1.6em; }
+  .software-item .image {
+    float: left;
+    margin-right: 20px;
+    min-height: 100px; }
+    .software-item .image img {
+      max-width: 80px;
+      max-height: 100px; }
+  .software-item .content {
+    display: block;
+    margin-left: 100px; }
+    .software-item .content h3.h5 {
+      font-size: 2rem; }
+    .software-item .content a {
+      color: #555; }
+    .software-item .content .wlt_shortcode_excerpt {
+      font-size: 14px;
+      line-height: 20px;
+      color: #666666; }
+  .software-item .bg-secondary {
+    background: #0e9be3 !important;
+    border-color: #2e4354; }
+  .software-item .event-month {
+    font-size: 13px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 0; }
+  .software-item .event-day {
+    color: #000000;
+    background: #fff;
+    border-left: #e8e8e8 1px solid;
+    border-right: #e8e8e8 1px solid;
+    border-bottom: #e8e8e8 1px solid;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px 0; }
+  .software-item .flex-list {
     position: relative;
-    margin-right: 20px; }
-
-.software-item .btn-secondary {
-  color: #fff;
-  background-color: #f0ad4e !important;
-  border-color: #f0ad4e;
-  border-right: 1px solid #efefef;
-  margin-right: 1px; }
+    margin: 1em;
+    overflow: hidden; }
+    .software-item .flex-list .list-inline-item {
+      position: relative;
+      margin-right: 20px; }
+      .software-item .flex-list .list-inline-item span {
+        font-size: 1.6rem; }
+  .software-item .btn-secondary {
+    color: #fff;
+    background-color: #f0ad4e !important;
+    border-color: #f0ad4e;
+    border-right: 1px solid #efefef;
+    margin-right: 1px;
+    font-size: 1.6rem; }
 
 /*=============Newletter Signup==============*/
 /*==========================================*/
@@ -182,7 +191,8 @@ main {
       text-transform: uppercase;
       color: #FFF;
       line-height: 1;
-      margin: 0 0 10px; }
+      margin: 0 0 10px;
+      font-size: 2.8rem; }
     .newsletter-wrapper .text-holder p {
       font-weight: 300;
       font-size: 12px;
@@ -193,7 +203,10 @@ main {
     margin-top: 10px; }
   .newsletter-wrapper .form-control {
     height: 40px;
-    margin: 0; }
+    margin: 0;
+    font-size: 1.6rem; }
+  .newsletter-wrapper #btn-newsletter-agreetc {
+    font-size: 1.6rem; }
 
 /*================FOOTER=================*/
 /*=======================================*/
@@ -206,3 +219,51 @@ footer {
       margin-right: 20px; }
       footer .list-inline li a {
         color: #ccc; }
+
+/*================SIDEBAR=================*/
+/*=======================================*/
+.sidebar-home .btn-group {
+  font-size: 1.6rem; }
+  .sidebar-home .btn-group .btn {
+    border-radius: 0;
+    padding: 0.7rem 1.5rem; }
+  .sidebar-home .btn-group .btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0.7rem 1.5rem; }
+  .sidebar-home .btn-group .btn.disabled {
+    font-size: 2rem; }
+  .sidebar-home .btn-group .btn-login {
+    background-color: #f0ad4e; }
+
+.sidebar-home .topsoftware {
+  margin-bottom: 30px; }
+
+.sidebar-home .popular.list-group-flush .list-group-item .image {
+  float: left;
+  margin-right: 20px; }
+  .sidebar-home .popular.list-group-flush .list-group-item .image img {
+    max-width: 40px;
+    max-height: 40px; }
+
+.sidebar-home .popular.list-group-flush .list-group-item .details {
+  padding: 0px;
+  font-size: 14px; }
+  .sidebar-home .popular.list-group-flush .list-group-item .details a {
+    height: 30px;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+
+.sidebar-home .popular.list-group-flush .list-group-item p {
+  font-size: 1.2rem;
+  text-align: center; }
+
+.sidebar-home .title-bar i {
+  margin-right: 10px; }
+
+.banner_270_200 {
+  line-height: 200px;
+  height: 200px;
+  margin-bottom: 30px; }

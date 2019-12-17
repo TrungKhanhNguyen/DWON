@@ -1,5 +1,8 @@
-﻿header {
-  background-color: #0e6b99 !important; }
+﻿html {
+  font-size: 62.5%; }
+
+header {
+  background-color: #0e6b99; }
 
 .header-1 .py-4 {
   padding: 24px 0; }
@@ -14,7 +17,8 @@
 .header-1 .input-group .form-control {
   height: 50px;
   border: 1px solid #ddd;
-  border-radius: unset !important; }
+  border-radius: unset !important;
+  font-size: 1.6rem; }
 
 .header-1 button {
   top: 5px;

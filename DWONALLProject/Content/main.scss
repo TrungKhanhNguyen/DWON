@@ -1,10 +1,13 @@
 ﻿$main-color: #0e6b99;
+@import 'basefile.scss';
 .text-white{
     color : #fff; 
 }
-
+a{
+    color : #555;
+}
 body{
-    line-height : 25px;
+    line-height : 30px;
     color : #555;
 }
 main{
@@ -119,19 +122,23 @@ padding: 3px;
     padding-right: 3px;
     padding-left: 3px;
 font-size: 13px;
-background-color : $main-color !important;
+//background-color : $main-color !important;
+ @include bg_main_color;
     }
 }
 .cat-item1 .content h6, .cat-item2 .content h6{
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .btn-viewall {
     color: #fff;
     background-color: #0e9be3 !important;
     border-color: #0e9be3;
+    font-size : 1.5rem;
+    margin-top : 1rem;
 }
 .software-item {
+    font-size : 1.6em;
     .image {
         float: left;
         margin-right: 20px;
@@ -146,7 +153,9 @@ background-color : $main-color !important;
     .content {
         display: block;
         margin-left: 100px;
-
+        h3.h5{
+            font-size : 2rem;
+        }
         a {
             color: #555;
         }
@@ -189,6 +198,9 @@ background-color : $main-color !important;
         .list-inline-item {
             position: relative;
             margin-right: 20px;
+            span{
+                font-size : 1.6rem;
+            }
         }
     }
 
@@ -198,6 +210,7 @@ background-color : $main-color !important;
         border-color: #f0ad4e;
         border-right: 1px solid #efefef;
         margin-right: 1px;
+        font-size : 1.6rem;
     }
 }
 
@@ -216,6 +229,7 @@ background-color : $main-color !important;
             color: #FFF;
             line-height: 1;
             margin: 0 0 10px;
+            font-size : 2.8rem;
         }
 
         p {
@@ -232,6 +246,10 @@ background-color : $main-color !important;
     .form-control{
         height: 40px;
 margin: 0;
+font-size : 1.6rem;
+    }
+    #btn-newsletter-agreetc{
+        font-size : 1.6rem;
     }
 }
 
@@ -250,4 +268,66 @@ a{
 }
         }
     }
+}
+/*================SIDEBAR=================*/
+/*=======================================*/
+.sidebar-home{
+    .btn-group{
+        font-size : 1.6rem;
+        .btn{
+            border-radius : 0;
+            padding : 0.7rem 1.5rem;
+        }
+        .btn:not(:disabled):not(.disabled){
+            cursor : pointer;
+            font-size : 2rem;
+            padding : 0.7rem 1.5rem;
+        }
+        .btn.disabled{
+            font-size : 2rem;
+        }
+        .btn-login{
+            background-color : #f0ad4e;
+            
+        }
+    }
+    .topsoftware{
+        margin-bottom : 30px;
+    }
+    .popular.list-group-flush{
+        .list-group-item{
+            .image{
+                float: left;
+                margin-right: 20px;
+                img{
+                    max-width: 40px;
+            max-height: 40px;
+                }
+            }
+            .details{
+                padding: 0px;
+                font-size : 14px;
+                a{
+                    height: 30px;
+                    
+overflow: hidden;
+display: block;
+text-overflow: ellipsis;
+white-space: nowrap;
+                }
+            }
+            p{
+                font-size : 1.2rem;
+                text-align : center;
+            }
+        }
+    }
+    .title-bar i{
+        margin-right : 10px;
+    }
+}
+.banner_270_200{
+    line-height : 200px;
+    height : 200px;
+    margin-bottom : 30px;
 }
