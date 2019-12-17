@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body class="home blog ppt_ ppt_fullwidth">
+    <header class="border-bottom">
+
+        <div class="container-full">
+
+            <div class="ppt-header header-1 header-logo4 no-sticky py-lg-1 viewport-lg">
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <div class="logo text-left pl-0" data-mobile-logo="http://so9.wlthemes.com/wp-content/themes/SO9/_software/template/images/logo.png" data-sticky-logo="http://so9.wlthemes.com/wp-content/themes/SO9/_software/template/images/logo.png">
+                                <a href="http://so9.wlthemes.com/" title="V9 - SOFTWARE DOWNLOAD THEME">
+                                    <img src="~/images/logo.png" alt="logo" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <form action="http://so9.wlthemes.com/" method="get" name="" id="mainsearchform">
+                                <input type="hidden" name="catid" value="" id="searchform1_catid">
+                                <div class="form-group mb-1">
+                                    <div class="input-group">
+                                      
+                                        <input type="text" class="form-control typeahead" name="s" placeholder="Search keyword...">
+                                        <button><i class="fa fa-search text-secondary"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-full bg-extra bg-secondary">
+                <nav class="header-nav1 bg-secondary mt-1">
+                    <div class="clearfix">
+                        <div class="container">
+                            <div class="row">
+                                <nav class="ppt-menu float-none separate-line submenu-scale text-left">
+                                    <nav class="ppt-menu float-none  text-left">
+                                        <ul id="menu-menu" class="">
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page" style="width:60px;  border-left: 0px;"><a href="http://so9.wlthemes.com/"><i class="fa fa-home"></i></a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://so9.wlthemes.com/about-us/" class="txt"><span>About Us</span></a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://so9.wlthemes.com/advertising/" class="txt"><span>Advertising</span></a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://so9.wlthemes.com/memberships/" class="txt"><span>Memberships</span></a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://so9.wlthemes.com/blog/" class="txt"><span>Blog</span></a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://so9.wlthemes.com/faq/" class="txt"><span>FAQ</span></a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://so9.wlthemes.com/testimonials/" class="txt"><span>Testimonials</span></a></li>
+                                            <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://so9.wlthemes.com/contact/" class="txt"><span>Contact</span></a></li>
+                                            <li class="float-lg-right">
+                                                <a href="http://so9.wlthemes.com/cart/">
+                                                    <i class="fa fa-shopping-basket mr-2"></i>
+                                                    Basket (<span class="cart-basket-count">0</span>)
+                                                </a>
+                                            </li>
+
+
+
+
+                                        </ul>
+                                    </nav>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+        <div class="container body-content">
+            <div class="row">
+                <div class="col-12 col-md-9 col-lg-9">
+                    @RenderBody()
+
+
+                </div><!-- end body -->
+                <aside class="sidebar-home col-12 col-md-3 col-lg-3">
+
+
+
+                    <div class="btn-group btn-block">
+                        <a class="btn btn-lg btn-danger disabled h6 text-uppercase"><i class="fa fa-check text-white" style="width:16px; height:20px"></i></a>
+                        <a class="btn btn-lg  btn-block btn-danger h6 text-uppercase font-weight-bold" href="http://so9.wlthemes.com/add-listing/"> Add Product</a>
+                    </div>
+
+                    <div class="btn-group btn-block mb-2">
+                        <a class="btn btn-lg btn-secondary disabled border-0 h6"><i class="fa fa-user-circle text-white" style="width:16px; height:20px"></i></a>
+                        <a href="http://so9.wlthemes.com/wp-login.php" class="btn btn-lg   btn-block btn-secondary h6 text-uppercase font-weight-bold">
+                            Sign up/in
+                        </a>
+                    </div>
+
+
+                    <h4 class="title-bar"> <i class="fa fa-cloud-upload" aria-hidden="true"></i> Top Downloads</h4>
+                    <div class="card mb-4 py-0">
+                        <div class="card-body py-1">
+                            <ul class="list-group list-group-flush top10 popular">
+                                <li class="list-group-item px-0 py-2">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/12.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/softwaretheme/12.jpg" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details mt-1">
+                                        <a href="http://so9.wlthemes.com/listing/sample-download-3/" class="font-weight-bold">Sample Affiliate Link</a>
+                                    </div>
+                                    <p class="mb-0 mt-1 small">
+                                        913 views /
+
+                                        257 downloads
+                                    </p>
+                                </li>
+                                <li class="list-group-item px-0 py-2">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/8.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/softwaretheme/8.jpg" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details mt-1">
+                                        <a href="http://so9.wlthemes.com/listing/early-detection-center/" class="font-weight-bold">Early Detection Center</a>
+                                    </div>
+                                    <p class="mb-0 mt-1 small">
+                                        932 views /
+
+                                        202 downloads
+                                    </p>
+                                </li>
+                                <li class="list-group-item px-0 py-2">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/14.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/softwaretheme/14.jpg" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details mt-1">
+                                        <a href="http://so9.wlthemes.com/listing/sample-download-5/" class="font-weight-bold">Sample Download</a>
+                                    </div>
+                                    <p class="mb-0 mt-1 small">
+                                        1,084 views /
+
+                                        174 downloads
+                                    </p>
+                                </li>
+                                <li class="list-group-item px-0 py-2">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/10.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/softwaretheme/10.jpg" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details mt-1">
+                                        <a href="http://so9.wlthemes.com/listing/sample-download/" class="font-weight-bold">Sample Download</a>
+                                    </div>
+                                    <p class="mb-0 mt-1 small">
+                                        584 views /
+
+                                        118 downloads
+                                    </p>
+                                </li>
+                                <li class="list-group-item px-0 py-2">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/13.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/softwaretheme/13.jpg" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details mt-1">
+                                        <a href="http://so9.wlthemes.com/listing/sample-download-4/" class="font-weight-bold">Sample Download</a>
+                                    </div>
+                                    <p class="mb-0 mt-1 small">
+                                        511 views /
+
+                                        66 downloads
+                                    </p>
+                                </li>
+                                <li class="list-group-item px-0 py-2">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/11.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/softwaretheme/11.jpg" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details mt-1">
+                                        <a href="http://so9.wlthemes.com/listing/sample-download-2/" class="font-weight-bold">Sample Download</a>
+                                    </div>
+                                    <p class="mb-0 mt-1 small">
+                                        336 views /
+
+                                        35 downloads
+                                    </p>
+                                </li>
+                                <li class="list-group-item px-0 py-2">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/1.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/softwaretheme/1.jpg" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details mt-1">
+                                        <a href="http://so9.wlthemes.com/listing/bitdefender-antivirus-plus-2014/" class="font-weight-bold">Bitdefender Antivirus Plus 2014</a>
+                                    </div>
+                                    <p class="mb-0 mt-1 small">
+                                        207 views /
+
+                                        31 downloads
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="wlt_sellspace sidebar270a">
+                        <a href="http://so9.wlthemes.com/advertising/?selladd=1&amp;ad=sidebar270a">
+                            <div class="sellspace_banner banner_270_200 text-center hidden-xs hidden-sm" style="width:270px; height:200px">
+                                <div class="title">Advertise Here</div> <div class="pricing">view pricing</div>
+                            </div>
+                        </a>
+                    </div>
+                    <h4 class="title-bar"> <i class="fa fa-cloud-download" aria-hidden="true"></i> Featured Downloads</h4>
+                    <div class="card mb-4 py-0">
+                        <div class="card-body py-1">
+                            <ul class="list-group list-group-flush top10">
+                                <li class="list-group-item px-0 py-3">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/8.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/softwaretheme/8.jpg" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details">
+                                        <a href="http://so9.wlthemes.com/listing/early-detection-center/" class="mt-0">Early Detection Center</a>
+                                    </div>
+                                    <p class="mb-0 small">
+                                        932 views /
+
+                                        202 downloads
+                                    </p>
+                                </li>
+                                <li class="list-group-item px-0 py-3">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/10.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/softwaretheme/10.jpg" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details">
+                                        <a href="http://so9.wlthemes.com/listing/sample-download/" class="mt-0">Sample Download</a>
+                                    </div>
+                                    <p class="mb-0 small">
+                                        584 views /
+
+                                        118 downloads
+                                    </p>
+                                </li>
+                                <li class="list-group-item px-0 py-3">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/11.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/softwaretheme/11.jpg" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details">
+                                        <a href="http://so9.wlthemes.com/listing/sample-download-2/" class="mt-0">Sample Download</a>
+                                    </div>
+                                    <p class="mb-0 small">
+                                        336 views /
+
+                                        35 downloads
+                                    </p>
+                                </li>
+                                <li class="list-group-item px-0 py-3">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/14.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/softwaretheme/14.jpg" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details">
+                                        <a href="http://so9.wlthemes.com/listing/sample-download-5/" class="mt-0">Sample Download</a>
+                                    </div>
+                                    <p class="mb-0 small">
+                                        1,084 views /
+
+                                        174 downloads
+                                    </p>
+                                </li>
+                                <li class="list-group-item px-0 py-3">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/2.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/softwaretheme/2.jpg" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details">
+                                        <a href="http://so9.wlthemes.com/listing/kaspersky-anti-virus/" class="mt-0">Kaspersky Anti-Virus</a>
+                                    </div>
+                                    <p class="mb-0 small">
+                                        228 views /
+
+                                        10 downloads
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="wlt_sellspace sidebar270b">
+                        <a href="http://so9.wlthemes.com/advertising/?selladd=1&amp;ad=sidebar270b">
+                            <div class="sellspace_banner banner_270_200 text-center hidden-xs hidden-sm" style="width:270px; height:200px">
+                                <div class="title">Advertise Here</div> <div class="pricing">view pricing</div>
+                            </div>
+                        </a>
+                    </div>
+                    <h4 class="title-bar"> <i class="fa fa-bookmark-o" aria-hidden="true"></i> New Downloads</h4>
+                    <div class="card mb-4 py-0">
+                        <div class="card-body py-1">
+                            <ul class="list-group list-group-flush top10">
+                                <li class="list-group-item px-0 py-3">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/johari-300x169.png" alt="johari.png" data-src="http://so9.wlthemes.com/wp-content/uploads/sites/67/2019/12/johari-300x169.png" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details">
+                                        <a href="http://so9.wlthemes.com/listing/ebook/" class="mt-0">ebook</a>
+                                    </div>
+                                    <p class="mb-0 small">
+                                        17 views /
+
+                                        2 downloads
+                                    </p>
+                                </li>
+                                <li class="list-group-item px-0 py-3">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/14.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/softwaretheme/14.jpg" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details">
+                                        <a href="http://so9.wlthemes.com/listing/sample-download-5/" class="mt-0">Sample Download</a>
+                                    </div>
+                                    <p class="mb-0 small">
+                                        1,084 views /
+
+                                        174 downloads
+                                    </p>
+                                </li>
+                                <li class="list-group-item px-0 py-3">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/13.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/softwaretheme/13.jpg" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details">
+                                        <a href="http://so9.wlthemes.com/listing/sample-download-4/" class="mt-0">Sample Download</a>
+                                    </div>
+                                    <p class="mb-0 small">
+                                        511 views /
+
+                                        66 downloads
+                                    </p>
+                                </li>
+                                <li class="list-group-item px-0 py-3">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/12.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/softwaretheme/12.jpg" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details">
+                                        <a href="http://so9.wlthemes.com/listing/sample-download-3/" class="mt-0">Sample Affiliate Link</a>
+                                    </div>
+                                    <p class="mb-0 small">
+                                        913 views /
+
+                                        257 downloads
+                                    </p>
+                                </li>
+                                <li class="list-group-item px-0 py-3">
+                                    <div class="image">
+                                        <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/11.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/softwaretheme/11.jpg" class="wlt_image img-fluid">
+                                    </div>
+                                    <div class="details">
+                                        <a href="http://so9.wlthemes.com/listing/sample-download-2/" class="mt-0">Sample Download</a>
+                                    </div>
+                                    <p class="mb-0 small">
+                                        336 views /
+
+                                        35 downloads
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="wlt_sellspace sidebar270c">
+                        <a href="http://so9.wlthemes.com/advertising/?selladd=1&amp;ad=sidebar270c">
+                            <div class="sellspace_banner banner_270_200 text-center hidden-xs hidden-sm" style="width:270px; height:200px">
+                                <div class="title">Advertise Here</div> <div class="pricing">view pricing</div>
+                            </div>
+                        </a>
+                    </div>
+                    <h4 class="mb-4 mt-3 title-bar"> <i class="fa fa-newspaper-o" aria-hidden="true"></i> Latest News</h4>
+                    <div class="card mb-4">
+                        <div class="card-body px-2 py-1">
+                            <ul class="list-group list-group-flush top10 blog">
+                                <li class="list-group-item px-0 py-3">
+
+                                    <a href="http://so9.wlthemes.com/2019/02/05/example-blog-post-8/">
+                                        <div class="image">
+                                            <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/blog8.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/blog/blog8.jpg" class="wlt_image img-fluid">
+                                        </div>
+                                        <div class="content">
+                                            <h6>Example Blog Post</h6>
+                                            <p class="recent-post-sm-meta mb-0"><i class="fa fa-clock-o mr-1"></i> February 5, 2019</p>
+                                        </div>
+                                    </a>
+
+                                </li>
+                                <li class="list-group-item px-0 py-3">
+
+                                    <a href="http://so9.wlthemes.com/2019/02/05/example-blog-post-7/">
+                                        <div class="image">
+                                            <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/blog7.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/blog/blog7.jpg" class="wlt_image img-fluid">
+                                        </div>
+                                        <div class="content">
+                                            <h6>Example Blog Post</h6>
+                                            <p class="recent-post-sm-meta mb-0"><i class="fa fa-clock-o mr-1"></i> February 5, 2019</p>
+                                        </div>
+                                    </a>
+
+                                </li>
+                                <li class="list-group-item px-0 py-3">
+
+                                    <a href="http://so9.wlthemes.com/2019/02/05/example-blog-post-6/">
+                                        <div class="image">
+                                            <img src="V9%20%E2%80%93%20SOFTWARE%20DOWNLOAD%20THEME_files/blog6.jpg" alt="" data-src="https://www.premiumpress.com/_demoimages/blog/blog6.jpg" class="wlt_image img-fluid">
+                                        </div>
+                                        <div class="content">
+                                            <h6>Example Blog Post</h6>
+                                            <p class="recent-post-sm-meta mb-0"><i class="fa fa-clock-o mr-1"></i> February 5, 2019</p>
+                                        </div>
+                                    </a>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </aside>
+            </div>
+        </div>
+
+        
+    </main>
+    <div class="newsletter-wrapper my-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pt-0 pb-0">
+                    <div class="text-holder">
+                        <h3>Sign up for Newsletter</h3>
+                        <p>Sign up to get our latest exclusive updates, deals, offers and promotions.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 pt-0 pb-0">
+
+
+
+                    <script>
+
+function ajax_newsletter_signup(){
+
+    jQuery.ajax({
+        type: "POST",
+        url: 'http://so9.wlthemes.com/',
+		dataType: 'json',
+		data: {
+            action: "newsletter_join",
+			email: jQuery('#wlt_newsletter_mailme').val(),
+        },
+        success: function(r) {
+
+			if(r.status == "ok"){
+				jQuery('#newsletterthankyou').show();
+				jQuery('#mailinglist-form').html('');
+			}else{
+				jQuery('#mailinglist-form').html("Invalid Email Address");
+			}
+
+        },
+        error: function(e) {
+            //alert("error "+e)
+        }
+    });
+
+}
+                    </script>
+
+                    <div id="newsletterthankyou" style="display:none" class="newsletter-confirmation txt">
+                        <div class="h4">Email confirmation sent.</div>
+                        <p>Please check your email for a confirmation email.</p>
+                        <p class="small">Only one you've confirmed your email will you be subscribed to our newsletter.</p>
+                    </div>
+
+                    <form id="mailinglist-form" name="mailinglist-form" method="post" onsubmit="return IsEmailMailinglist();" class="footer-newsletter">
+
+
+                        <div class="input-group">
+                            <input type="text" name="wlt_newsletter_mailme" id="wlt_newsletter_mailme" placeholder="Email Address Here.." class="form-control rounded-0">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn btn-outline-light rounded-0" disabled="disabled" id="btn-newsletter-agreetc">Join</button>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="clearfix mt-2 text-right small text-light">
+                            <input name="agreetc" type="checkbox" id="newsagreetc" onchange="UpdateNewsletterTCA()">
+                            Agree to <a href="http://so9.wlthemes.com/terms-conditions/" class="text-light"><u>terms &amp; conditions.</u></a>
+                        </div>
+                        <script>
+
+					 function UpdateNewsletterTCA(){
+					 if(jQuery('#newsagreetc').is(':checked') ){
+                        jQuery('#btn-newsletter-agreetc').removeAttr("disabled");
+                        }else{
+						jQuery('#btn-newsletter-agreetc').attr("disabled", true);
+                        }
+					 }
+                        </script>
+
+
+                    </form>
+                    @*<script>
+		function IsEmailMailinglist(){
+		var pattern = new RegExp(/^(("[\w-+\s]+")|([\w-+]+(?:\.[\w-+]+)*)|("[\w-+\s]+")([\w-+]+(?:\.[\w-+]+)*))(@((?:[\w-+]+\.)*\w[\w-+]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][\d]\.|1[\d]{2}\.|[\d]{1,2}\.))((25[0-5]|2[0-4][\d]|1[\d]{2}|[\d]{1,2})\.){2}(25[0-5]|2[0-4][\d]|1[\d]{2}|[\d]{1,2})\]?$)/i);
+			var de4 	= document.getElementById("wlt_newsletter_mailme");
+
+			if(de4.value == ''){
+			alert("Please enter your email.");
+			de4.style.border = 'thin solid red';
+			de4.focus();
+			return false;
+			}
+			if( !pattern.test( de4.value ) ) {
+			alert("Invalid Email Address");
+			de4.style.border = 'thin solid blue';
+			de4.focus();
+			return false;
+			}
+			ajax_newsletter_signup();
+
+		  	return false;
+		}
+                    </script>*@
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark py-3 text-light text-uppercase">
+        <div class="container">
+            <div class="text-center">
+                <div class="mt-4">
+                    <div class="wlt_sellspace footer468">
+                        <a href="http://so9.wlthemes.com/advertising/?selladd=1&amp;ad=footer468">
+                            <div class="sellspace_banner banner_468_60 text-center hidden-xs hidden-sm" style="width:468px; height:60px">
+                                <div class="title">Advertise Here</div> <div class="pricing">view pricing</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="copyright">© 2019 - John Doe Company</div>
+                </div>
+                <div class="col-sm-12 col-md-8 text-right d-none d-md-block">
+                    <div class="menu-menu-container"><ul id="menu-menu-1" class="footer-menu list-inline float-right"><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://so9.wlthemes.com/about-us/" class="txt"><span>About Us</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://so9.wlthemes.com/advertising/" class="txt"><span>Advertising</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://so9.wlthemes.com/memberships/" class="txt"><span>Memberships</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://so9.wlthemes.com/blog/" class="txt"><span>Blog</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://so9.wlthemes.com/faq/" class="txt"><span>FAQ</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://so9.wlthemes.com/testimonials/" class="txt"><span>Testimonials</span></a></li><li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://so9.wlthemes.com/contact/" class="txt"><span>Contact</span></a></li></ul></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "Content/header.css",
+    "inputFile": "Content/header.scss"
+  },
+  {
+    "outputFile": "Content/owl.carousel.css",
+    "inputFile": "Content/owl.carousel.scss"
+  },
+  {
+    "outputFile": "Content/main.css",
+    "inputFile": "Content/main.scss"
+  }
+]

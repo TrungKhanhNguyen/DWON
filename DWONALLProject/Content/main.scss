@@ -1,0 +1,253 @@
+﻿$main-color: #0e6b99;
+.text-white{
+    color : #fff; 
+}
+
+body{
+    line-height : 25px;
+    color : #555;
+}
+main{
+    background: #fff;
+border: 1px solid #ccc;
+margin: auto auto;
+max-width: 1140px;
+margin-top: 40px;
+margin-bottom: 40px;
+padding-top: 15px;
+}
+.title-bar{
+    background: #0e9be3;
+color: #ffffff;
+padding: 15px 10px;
+font-size: 14px;
+border-bottom: 3px solid #f0ad4e;
+text-transform: uppercase;
+}
+.hero-2{
+    margin-bottom : 30px;
+}
+.cat-item1{
+    background: #F9F9F9;
+    background-color: rgb(249, 249, 249);
+line-height: 1.2;
+width: 100%;
+position: relative;
+border: 1px solid #F1F1F1;
+font-size: 12px;
+font-weight: 400;
+letter-spacing: 0.5px;
+text-align: center;
+margin-bottom: 20px;
+    .icon{
+        width: 100% !important;
+        height: auto;
+        display: block !important;
+        overflow: hidden !important;
+        margin: auto;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    .content{
+        padding: 18px 0px 10px 0px;
+        h6{
+            font-size: 13px;
+        }
+    }
+    span{
+        position: absolute;
+top: 10px;
+right: 10px;
+width: 30px;
+font-size: 11px;
+border-radius: 2px;
+padding: 4px 2px;
+text-align : center;
+    }
+}
+.sellspace_banner {
+    background: #f8f9fa;
+    display: inline-block;
+    border: 1px solid #BEBEBE;
+    position: relative;
+    text-shadow: 1px 1px 0 #fff;
+    width: 100%;
+
+    .pricing {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        line-height: 30px;
+        background: #c8c8c8;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #fff;
+        text-shadow: none;
+        font-size: 12px;
+    }
+
+    .title {
+        font-size: 13px;
+        margin-top: 30px;
+        color: #555;
+    }
+}
+.banner_700_90{
+    height : 90px;
+    margin-bottom : 20px;
+}
+.cat-item2 {
+    background: #F9F9F9;
+    background-color: rgb(249, 249, 249);
+    line-height: 1.2;
+    width: 100%;
+    position: relative;
+    border: 1px solid #F1F1F1;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-bottom: 20px;
+    .content{
+        padding: 10px 10px 20px 10px;
+    }
+    .countb{
+        float: right !important;
+padding: 3px;
+    padding-right: 3px;
+    padding-left: 3px;
+font-size: 13px;
+background-color : $main-color !important;
+    }
+}
+.cat-item1 .content h6, .cat-item2 .content h6{
+    font-size: 12px;
+}
+
+.btn-viewall {
+    color: #fff;
+    background-color: #0e9be3 !important;
+    border-color: #0e9be3;
+}
+.software-item {
+    .image {
+        float: left;
+        margin-right: 20px;
+        min-height: 100px;
+
+        img {
+            max-width: 80px;
+            max-height: 100px;
+        }
+    }
+
+    .content {
+        display: block;
+        margin-left: 100px;
+
+        a {
+            color: #555;
+        }
+
+        .wlt_shortcode_excerpt {
+            font-size: 14px;
+            line-height: 20px;
+            color: #666666;
+        }
+    }
+
+    .bg-secondary {
+        background: #0e9be3 !important;
+        border-color: #2e4354;
+    }
+
+    .event-month {
+        font-size: 13px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .event-day {
+        color: #000000;
+        background: #fff;
+        border-left: #e8e8e8 1px solid;
+        border-right: #e8e8e8 1px solid;
+        border-bottom: #e8e8e8 1px solid;
+        font-size: 24px;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    .flex-list {
+        position: relative;
+        margin: 1em;
+        overflow: hidden;
+
+        .list-inline-item {
+            position: relative;
+            margin-right: 20px;
+        }
+    }
+
+    .btn-secondary {
+        color: #fff;
+        background-color: #f0ad4e !important;
+        border-color: #f0ad4e;
+        border-right: 1px solid #efefef;
+        margin-right: 1px;
+    }
+}
+
+/*=============Newletter Signup==============*/
+/*==========================================*/
+.newsletter-wrapper {
+    padding-top: 45px;
+    padding-bottom: 25px;
+    background: $main-color !important;
+
+    .text-holder {
+        margin-bottom: 25px;
+
+        h3 {
+            text-transform: uppercase;
+            color: #FFF;
+            line-height: 1;
+            margin: 0 0 10px;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 1.2;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+    }
+    .footer-newsletter{
+        margin-top : 10px;
+    }
+    .form-control{
+        height: 40px;
+margin: 0;
+    }
+}
+
+
+/*================FOOTER=================*/
+/*=======================================*/
+footer{
+    font-size : 12px;
+    .list-inline{
+        margin-bottom : 0;
+        li{
+            float: left;
+margin-right: 20px;
+a{
+    color: #ccc;
+}
+        }
+    }
+}
