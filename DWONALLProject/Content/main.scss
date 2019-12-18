@@ -93,9 +93,13 @@ text-align : center;
 
     .title {
         font-size: 13px;
-        margin-top: 30px;
         color: #555;
+        
     }
+    &:not(.sidebar_adv){
+        .title{margin-top: 30px;}
+            
+        }
 }
 .banner_700_90{
     height : 90px;
@@ -271,59 +275,87 @@ a{
 }
 /*================SIDEBAR=================*/
 /*=======================================*/
-.sidebar-home{
-    .btn-group{
-        font-size : 1.6rem;
-        .btn{
-            border-radius : 0;
-            padding : 0.7rem 1.5rem;
+.sidebar-home {
+    .btn-group {
+        font-size: 1.6rem;
+
+        .btn {
+            border-radius: 0;
+            padding: 0.7rem 1.5rem;
         }
-        .btn:not(:disabled):not(.disabled){
-            cursor : pointer;
-            font-size : 2rem;
-            padding : 0.7rem 1.5rem;
+
+        .btn:not(:disabled):not(.disabled) {
+            cursor: pointer;
+            font-size: 2rem;
+            padding: 0.7rem 1.5rem;
         }
-        .btn.disabled{
-            font-size : 2rem;
+
+        .btn.disabled {
+            font-size: 2rem;
         }
-        .btn-login{
-            background-color : #f0ad4e;
-            
+
+        .btn-login {
+            background-color: #f0ad4e;
         }
     }
-    .topsoftware{
-        margin-bottom : 30px;
+
+    .topsoftware {
+        margin-bottom: 30px;
+
+        .list-group-flush {
+            .list-group-item {
+                .image {
+                    float: left;
+                    margin-right: 20px;
+
+                    img {
+                        max-width: 40px;
+                        max-height: 40px;
+                    }
+                }
+
+                .details {
+                    padding: 0px;
+                    font-size: 14px;
+
+                    a {
+                        height: 30px;
+                        overflow: hidden;
+                        display: block;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+            }
+        }
     }
-    .popular.list-group-flush{
-        .list-group-item{
-            .image{
+
+    .title-bar i {
+        margin-right: 10px;
+    }
+
+    .blog {
+        li {
+            .image {
                 float: left;
                 margin-right: 20px;
-                img{
-                    max-width: 40px;
-            max-height: 40px;
+
+                img {
+                    max-width: 80px;
+                    max-height: 80px;
                 }
             }
-            .details{
-                padding: 0px;
-                font-size : 14px;
-                a{
-                    height: 30px;
-                    
-overflow: hidden;
-display: block;
-text-overflow: ellipsis;
-white-space: nowrap;
+            .content{
+                h6{
+                    font-size : 1.6rem;
                 }
-            }
-            p{
-                font-size : 1.2rem;
-                text-align : center;
             }
         }
-    }
-    .title-bar i{
-        margin-right : 10px;
     }
 }
 .banner_270_200{

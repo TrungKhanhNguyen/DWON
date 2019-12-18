@@ -86,8 +86,9 @@ main {
     font-size: 12px; }
   .sellspace_banner .title {
     font-size: 13px;
-    margin-top: 30px;
     color: #555; }
+  .sellspace_banner:not(.sidebar_adv) .title {
+    margin-top: 30px; }
 
 .banner_700_90 {
   height: 90px;
@@ -238,30 +239,37 @@ footer {
 
 .sidebar-home .topsoftware {
   margin-bottom: 30px; }
-
-.sidebar-home .popular.list-group-flush .list-group-item .image {
-  float: left;
-  margin-right: 20px; }
-  .sidebar-home .popular.list-group-flush .list-group-item .image img {
-    max-width: 40px;
-    max-height: 40px; }
-
-.sidebar-home .popular.list-group-flush .list-group-item .details {
-  padding: 0px;
-  font-size: 14px; }
-  .sidebar-home .popular.list-group-flush .list-group-item .details a {
-    height: 30px;
-    overflow: hidden;
-    display: block;
-    text-overflow: ellipsis;
-    white-space: nowrap; }
-
-.sidebar-home .popular.list-group-flush .list-group-item p {
-  font-size: 1.2rem;
-  text-align: center; }
+  .sidebar-home .topsoftware .list-group-flush .list-group-item .image {
+    float: left;
+    margin-right: 20px; }
+    .sidebar-home .topsoftware .list-group-flush .list-group-item .image img {
+      max-width: 40px;
+      max-height: 40px; }
+  .sidebar-home .topsoftware .list-group-flush .list-group-item .details {
+    padding: 0px;
+    font-size: 14px; }
+    .sidebar-home .topsoftware .list-group-flush .list-group-item .details a {
+      height: 30px;
+      overflow: hidden;
+      display: block;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+  .sidebar-home .topsoftware .list-group-flush .list-group-item p {
+    font-size: 1.2rem;
+    text-align: center; }
 
 .sidebar-home .title-bar i {
   margin-right: 10px; }
+
+.sidebar-home .blog li .image {
+  float: left;
+  margin-right: 20px; }
+  .sidebar-home .blog li .image img {
+    max-width: 80px;
+    max-height: 80px; }
+
+.sidebar-home .blog li .content h6 {
+  font-size: 1.6rem; }
 
 .banner_270_200 {
   line-height: 200px;
